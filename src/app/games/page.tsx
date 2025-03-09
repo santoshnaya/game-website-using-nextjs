@@ -4,9 +4,9 @@ import { BsCheckCircleFill } from "react-icons/bs";
 export default function Games() {
   const games = [
     {
-      title: "Cyber Assault",
+      title: "WCCFsteelassault",
       category: "Action",
-      image: "/game-images/cyber-assault.jpg",
+      image: "/images/WCCFsteelassault.jpg",
       players: "1-4 players",
       description: "Fast-paced cyberpunk shooter with stunning neon visuals.",
       rating: 4.8,
@@ -15,7 +15,7 @@ export default function Games() {
     {
       title: "Mystic Realms",
       category: "RPG",
-      image: "/game-images/mystic-realms.jpg",
+      image: "/images/mystic realms.jpg",
       players: "1 player",
       description: "Epic fantasy RPG with deep storyline and character customization.",
       rating: 4.9,
@@ -24,7 +24,7 @@ export default function Games() {
     {
       title: "Speed Demons",
       category: "Racing",
-      image: "/game-images/speed-demons.jpg",
+      image: "/images/speed demons.jpg",
       players: "1-8 players",
       description: "High-octane racing with futuristic vehicles and tracks.",
       rating: 4.7,
@@ -33,7 +33,7 @@ export default function Games() {
     {
       title: "Strategy Empire",
       category: "Strategy",
-      image: "/game-images/strategy-empire.jpg",
+      image: "/images/strategy empire.jpg",
       players: "1-6 players",
       description: "Build and manage your empire in this epic strategy game.",
       rating: 4.6,
@@ -42,7 +42,7 @@ export default function Games() {
     {
       title: "Cosmic Defenders",
       category: "Space Sim",
-      image: "/game-images/cosmic-defenders.jpg",
+      image: "/images/cosmic defenders.webp",
       players: "1-100 players",
       description: "Explore vast galaxies and defend your space territory.",
       rating: 4.8,
@@ -51,7 +51,7 @@ export default function Games() {
     {
       title: "Dragon's Legacy",
       category: "Adventure",
-      image: "/game-images/dragons-legacy.jpg",
+      image: "/images/dragon's legacy.jpg",
       players: "1-4 players",
       description: "Embark on an epic journey with dragons and ancient magic.",
       rating: 4.9,
@@ -124,6 +124,7 @@ export default function Games() {
           {games.map((game, index) => (
             <div key={index} className="bg-gray-900/50 rounded-xl overflow-hidden hover:shadow-lg hover:shadow-purple-500/20 transition-all hover:-translate-y-1">
               <div className="h-48 bg-gray-800 relative">
+                <img src={game.image} alt={game.title} className="w-full h-full object-cover" />
                 <div className="absolute top-4 right-4 bg-purple-600 text-white text-sm px-3 py-1 rounded-full">
                   {game.category}
                 </div>

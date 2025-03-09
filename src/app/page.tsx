@@ -4,9 +4,9 @@ import React from "react";
 export default function Home() {
   const games = [
     {
-      title: "Cyber Assault",
+      title: "WCCFsteelassault",
       category: "Action",
-      image: "/game-images/cyber-assault.jpg",
+      image: "/images/WCCFsteelassault.jpg",
       players: "1-4 players",
       description: "Fast-paced cyberpunk shooter with stunning neon visuals.",
       rating: 4.8,
@@ -15,7 +15,7 @@ export default function Home() {
     {
       title: "Mystic Realms",
       category: "RPG",
-      image: "/game-images/mystic-realms.jpg",
+      image: "/images/mystic realms.jpg",
       players: "1 player",
       description: "Epic fantasy RPG with deep storyline and character customization.",
       rating: 4.9,
@@ -24,7 +24,7 @@ export default function Home() {
     {
       title: "Speed Demons",
       category: "Racing",
-      image: "/game-images/speed-demons.jpg",
+      image: "/images/speed demons.jpg",
       players: "1-8 players",
       description: "High-octane racing with futuristic vehicles and tracks.",
       rating: 4.7,
@@ -122,6 +122,11 @@ export default function Home() {
             {games.map((game, index) => (
               <div key={index} className="bg-gray-900/50 rounded-xl overflow-hidden hover:shadow-lg hover:shadow-purple-500/20 transition-all hover:-translate-y-1">
                 <div className="h-48 bg-gray-800 relative">
+                  <img
+                    src={game.image}
+                    alt={game.title}
+                    className="w-full h-full object-cover"
+                  />
                   <div className="absolute top-4 right-4 bg-purple-600 text-white text-sm px-3 py-1 rounded-full">
                     {game.category}
                   </div>

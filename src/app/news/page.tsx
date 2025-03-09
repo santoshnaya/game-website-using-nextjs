@@ -6,28 +6,28 @@ export default function News() {
       title: "New Battle Pass Season Announced",
       date: "March 15, 2024",
       category: "Updates",
-      image: "/news-images/battle-pass.jpg",
+      image: "/images/WCCFsteelassault.jpg",
       summary: "Get ready for an epic new season with exclusive rewards, challenges, and legendary items."
     },
     {
       title: "Global Tournament Series 2024",
       date: "March 12, 2024",
       category: "Esports",
-      image: "/news-images/tournament.jpg",
+      image: "/images/speed demons.jpg",
       summary: "Join the biggest gaming tournament of the year with a prize pool of $1 million."
     },
     {
       title: "Mystic Realms: Major Content Update",
       date: "March 10, 2024",
       category: "Game Updates",
-      image: "/news-images/mystic-update.jpg",
+      image: "/images/mystic realms.jpg",
       summary: "Explore new realms, face challenging bosses, and discover powerful artifacts in this massive update."
     },
     {
       title: "Community Spotlight: Player Achievements",
       date: "March 8, 2024",
       category: "Community",
-      image: "/news-images/community.jpg",
+      image: "/images/cosmic defenders.webp",
       summary: "Celebrating our amazing players and their extraordinary achievements this month."
     }
   ];
@@ -43,6 +43,7 @@ export default function News() {
           {newsItems.map((item, index) => (
             <div key={index} className="bg-gray-900/50 rounded-xl overflow-hidden hover:shadow-lg hover:shadow-purple-500/20 transition-all hover:-translate-y-1">
               <div className="h-48 bg-gray-800 relative">
+                <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
                 <div className="absolute top-4 right-4 bg-purple-600 text-white text-sm px-3 py-1 rounded-full">
                   {item.category}
                 </div>
