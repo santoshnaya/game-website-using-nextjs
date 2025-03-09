@@ -336,7 +336,7 @@ export default function Home() {
 
           <div className="mt-12 pt-8 border-t border-gray-800">
             <p className="text-center text-gray-400">
-              © 2024 Epic Gaming. All rights reserved.
+              © 2025 Epic Gaming. All rights reserved.
             </p>
           </div>
         </div>
